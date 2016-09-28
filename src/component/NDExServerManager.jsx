@@ -61,7 +61,7 @@ export default class NDexServerManager extends React.Component {
     if (serverId != this.props.settings.get('server')) {
       this.props.serverActions.remove(serverId)
     } else {
-      window.alert("Cannot deleted the active server")
+      window.alert("Error: Cannot delete the active server")
     }
   }
 
@@ -77,7 +77,7 @@ export default class NDexServerManager extends React.Component {
         edits.pass
       )
     } else {
-      window.alert('Could not create Server entry, invalid name or address.')
+      window.alert('Error: Could not create Server entry, invalid name or address')
     }
   }
 
