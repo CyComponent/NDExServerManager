@@ -1,11 +1,11 @@
 {
-  "name": "NDExValetFinder",
+  "name": "ndex-server-manager",
   "author": "Eric Sage",
   "version": "v0.0.1",
-  "description": "Find and choose NDEx networks with ease.",
+  "description": "Find and choose NDEx servers with ease.",
   "license": "MIT",
   "keywords": [],
-  "main": "build/NDExValetFinder.js",
+  "main": "build/NDExServerManager.js",
   "files": [
     "webpack.config.js",
     ".preprocessor.js",
@@ -20,19 +20,20 @@
     "test": "eslint src/ && jest",
     "coverage": "jest --coverage"
   },
-  "homepage": "https://github.com/CyComponent/NDExValetFinder",
+  "homepage": "https://github.com/CyComponent/NDExServerManager",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CyComponent/NDExValetFinder.git"
+    "url": "https://github.com/CyComponent/NDExServerManager.git"
   },
   "bugs": {
-    "url": "https://github.com/CyComponent/NDExValetFinder/issues"
+    "url": "https://github.com/CyComponent/NDExServerManager/issues"
   },
   "peerDependencies": {
     "react": "^15.2.1",
     "react-dom": "^15.2.1"
   },
   "devDependencies": {
+    "ndex-store": "^0.0.8",
     "babel-core": "^6.5.1",
     "babel-eslint": "^4.1.8",
     "babel-jest": "^6.0.1",
@@ -41,7 +42,6 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
     "css-loader": "^0.23.0",
-    "ndex-search-ui": "0.0.13",
     "eslint": "^2.0.0",
     "file-loader": "^0.8.5",
     "immutable": "^3.7.6",
